@@ -1,0 +1,6 @@
+<p>
+    Value: <span class="value-span" id="plain_1">{{box[value]}}</span>
+</p>
+<button (click)="button($event,1)">-</button>
+<input [(ngModel)]="value" type="range" min="0" max="47" (input)="changeZoom($event)"/>
+<button (click)="button($event,2)">+</button>
